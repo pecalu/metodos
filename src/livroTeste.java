@@ -8,11 +8,9 @@ public class livroTeste {
         meuLivro.resumo = "eita como ele tadiboa <°>|<°>";
         meuLivro.autor = "luan gameplays";
 
-        System.out.println(meuLivro.nome);
-        System.out.println(meuLivro.resumo);
-        System.out.println(meuLivro.preco);
-        System.out.println(meuLivro.paginas);
-        System.out.println(meuLivro.autor);
+        meuLivro.aplicarDesconto(0.1);
+
+        meuLivro.exibirDados();
 
         Livro livroFavorito = new Livro();
         livroFavorito.nome = "CLEBER RESPOSTAS";
@@ -20,6 +18,8 @@ public class livroTeste {
         livroFavorito.paginas = 1700;
         livroFavorito.preco = 139.99;
         livroFavorito.autor = "cleber mentoria";
+
+        livroFavorito.aplicarDesconto(0.25);
 
         livroFavorito.exibirDados();
     }
