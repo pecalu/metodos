@@ -19,8 +19,7 @@ public class livroTeste {
         livroFavorito.preco = 139.99;
         livroFavorito.autor = "cleber mentoria";
 
-        livroFavorito.aplicarDesconto(0.25);
-
+        livroFavorito.taxaIpmressao();
         livroFavorito.exibirDados();
     }
 }
